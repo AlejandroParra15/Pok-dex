@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="rareblue">#2a75bb</color>
+    <color name="greyBtn">#CFCFCF</color>
 
     <color name="LightBlue">#FFBAC7FF</color>
     <color name="lightGrey">#FFAAAAAA</color>
@@ -21,6 +22,7 @@
 
     <color name="TypeNormal">#FFA8A77A</color>
     <color name="TypeFire">#FFEE8130</color>
+    <color name="TypeSoftFire">#EA8B45</color>
     <color name="TypeWater">#FF6390F0</color>
     <color name="TypeElectric">#FFF7D02C</color>
     <color name="TypeGrass">#FF7AC74C</color>
