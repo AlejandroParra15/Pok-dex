@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         query.get().addOnCompleteListener {
             if(it.result!!.size() == 0) {
                 val user = User(UUID.randomUUID().toString(), username)
-                db.collection(USERS_COLLECTION).document(user.id).set(user)
+                db.collection(USERS_COLLECTION).document(user.username).set(user)
                 val editor : SharedPreferences.Editor = sharedPreferences.edit()
                 editor.putString(USER_EXTRA,username)
                 editor.apply()

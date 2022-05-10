@@ -27,7 +27,7 @@
             app:srcCompat="@drawable/pokeball" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/tvUsername"
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="5dp"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.89"
-            app:layout_constraintStart_toEndOf="@+id/editTextTextPersonName"
+            app:layout_constraintStart_toEndOf="@+id/tvUsername"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo" />
 
