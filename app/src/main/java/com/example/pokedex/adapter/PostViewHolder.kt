@@ -24,33 +24,33 @@ class PostViewHolder(view:View) :RecyclerView.ViewHolder(view){
 
     @SuppressLint("ResourceAsColor")
     fun render(postModel:Pokemon){
-        index.text=postModel.index
+        index.text=postModel.id
         name.text=postModel.name
-        type.text=postModel.type
-        Glide.with(icon.context).load(postModel.icon).into(icon)
+        type.text= postModel.types[0].type.name
+        Glide.with(icon.context).load(postModel.sprites.other.official.frontDefault).into(icon)
 
         var typeColor = 0
 
         when (type.text) {
-            "Normal" -> typeColor = banner.resources.getColor(R.color.TypeNormal)
-            "Fire" -> typeColor = banner.resources.getColor(R.color.TypeFire)
+            "normal" -> typeColor = banner.resources.getColor(R.color.TypeNormal)
+            "fire" -> typeColor = banner.resources.getColor(R.color.TypeFire)
             "softfire" -> typeColor = banner.resources.getColor(R.color.TypeSoftFire)
-            "Water" -> typeColor = banner.resources.getColor(R.color.TypeWater)
-            "Electric" -> typeColor = banner.resources.getColor(R.color.TypeElectric)
-            "Grass" -> typeColor =banner.resources.getColor(R.color.TypeGrass)
-            "Ice" -> typeColor = banner.resources.getColor(R.color.TypeIce)
-            "Fighting" -> typeColor = banner.resources.getColor(R.color.TypeFighting)
-            "Poison" -> typeColor = banner.resources.getColor(R.color.TypePoison)
-            "Ground" -> typeColor = banner.resources.getColor(R.color.TypeGround)
-            "Flying" -> typeColor = banner.resources.getColor(R.color.TypeFlying)
-            "Psychic" -> typeColor = banner.resources.getColor(R.color.TypePsychic)
-            "Bug" -> typeColor = banner.resources.getColor(R.color.TypeBug)
-            "Rock" -> typeColor = banner.resources.getColor(R.color.TypeRock)
-            "Ghost" -> typeColor = banner.resources.getColor(R.color.TypeGhost)
-            "Dragon" -> typeColor = banner.resources.getColor(R.color.TypeDragon)
-            "Dark" -> typeColor = banner.resources.getColor(R.color.TypeDark)
-            "Steel" -> typeColor = banner.resources.getColor(R.color.TypeSteel)
-            "Fairy" -> typeColor = banner.resources.getColor(R.color.TypeFairy)
+            "water" -> typeColor = banner.resources.getColor(R.color.TypeWater)
+            "electric" -> typeColor = banner.resources.getColor(R.color.TypeElectric)
+            "grass" -> typeColor =banner.resources.getColor(R.color.TypeGrass)
+            "ice" -> typeColor = banner.resources.getColor(R.color.TypeIce)
+            "fighting" -> typeColor = banner.resources.getColor(R.color.TypeFighting)
+            "poison" -> typeColor = banner.resources.getColor(R.color.TypePoison)
+            "ground" -> typeColor = banner.resources.getColor(R.color.TypeGround)
+            "flying" -> typeColor = banner.resources.getColor(R.color.TypeFlying)
+            "psychic" -> typeColor = banner.resources.getColor(R.color.TypePsychic)
+            "bug" -> typeColor = banner.resources.getColor(R.color.TypeBug)
+            "rock" -> typeColor = banner.resources.getColor(R.color.TypeRock)
+            "ghost" -> typeColor = banner.resources.getColor(R.color.TypeGhost)
+            "dragon" -> typeColor = banner.resources.getColor(R.color.TypeDragon)
+            "dark" -> typeColor = banner.resources.getColor(R.color.TypeDark)
+            "steel" -> typeColor = banner.resources.getColor(R.color.TypeSteel)
+            "fairy" -> typeColor = banner.resources.getColor(R.color.TypeFairy)
         }
 
         val strokeWidth = 5 // 5px not dp
